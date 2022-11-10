@@ -1,18 +1,20 @@
-import '../styles/globals.css'
-import Header from './Header'
+import "../styles/globals.css";
+import Header from "./Header";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html>
-      <head></head>
+      <head>
+        <title>NextJS 13 | Home</title>
+      </head>
       <body>
         <Header />
         {children}
       </body>
     </html>
-  )
+  );
 }
